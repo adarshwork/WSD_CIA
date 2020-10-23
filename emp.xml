@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/xsl" href="emp.xsl"?>
+ <Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="emp.xsd"> 
+  <Employee Emp-id="E001"> 
+   <Emp-name> Ramesh Kumar </Emp-name> 
+   <Emp-age> 38 </Emp-age> 
+   <Emp-salary> 50000 </Emp-salary> 
+   <Emp-emailid> rameshkumar@gmail.com </Emp-emailid>
+   <Emp-Phonenum> 9525456789 </Emp-Phonenum>
+   <Emp-designation> Manager </Emp-designation>
+   <Emp-promotion></Emp-promotion>
+  </Employee> 
+    <Employee Emp-id="E002"> 
+   <Emp-name> Suresh Kumar </Emp-name> 
+   <Emp-age> 42 </Emp-age> 
+   <Emp-salary> 55000 </Emp-salary> 
+   <Emp-emailid> sureshkumar@gmail.com </Emp-emailid>
+   <Emp-Phonenum> 9525455679 </Emp-Phonenum>
+   <Emp-designation> Assistant Manager </Emp-designation>
+    <Emp-promotion></Emp-promotion>
+  </Employee>
+    <Employee Emp-id="E003"> 
+   <Emp-name> Lokesh Kumar </Emp-name> 
+   <Emp-age> 50 </Emp-age> 
+   <Emp-salary> 57000 </Emp-salary> 
+   <Emp-emailid> lokeshkumar@gmail.com </Emp-emailid>
+   <Emp-Phonenum> 9525458967 </Emp-Phonenum>
+   <Emp-designation> Design Manager </Emp-designation>
+    <Emp-promotion></Emp-promotion>
+  </Employee>
+    <Employee Emp-id="E004"> 
+   <Emp-name> Pritesh Kumar </Emp-name> 
+   <Emp-age> 55 </Emp-age> 
+   <Emp-salary> 59000 </Emp-salary> 
+   <Emp-emailid> priteshkumar@gmail.com </Emp-emailid>
+   <Emp-Phonenum> 9525459876 </Emp-Phonenum>
+   <Emp-designation> Assistant Design Manager </Emp-designation>
+    <Emp-promotion></Emp-promotion>
+  </Employee>
+    <Employee Emp-id="E005"> 
+   <Emp-name> Shailesh Kumar </Emp-name> 
+   <Emp-age> 56 </Emp-age> 
+   <Emp-salary> 56000 </Emp-salary> 
+   <Emp-emailid> shaileshkumar@gmail.com </Emp-emailid>
+   <Emp-Phonenum> 9525458671 </Emp-Phonenum>
+   <Emp-designation> Accounts Manager </Emp-designation>
+    <Emp-promotion></Emp-promotion>
+  </Employee>
+  </Company>
