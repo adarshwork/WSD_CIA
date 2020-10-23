@@ -18,7 +18,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 </tr> 
 	<xsl:for-each select="Company/Employee"> 
 <tr> 
-    <td><xsl:value-of select="Emp-id"/></td>
+    <td><xsl:value-of select="@Emp-id"/></td>
 	<td><xsl:value-of select="Emp-name"/></td> 
 	<td><xsl:value-of select="Emp-age"/></td> 
 	<td><xsl:value-of select="Emp-salary"/></td> 
