@@ -20,7 +20,6 @@
             		<xs:element name="Emp-emailid" type="xs:string"/>
             		<xs:element name="Emp-Phonenum" type="xs:integer"/>
             		<xs:element name="Emp-designation" type="xs:string"/>
-            		<xs:element name="Emp-promotion" type="xs:string"/>
           		 </xs:sequence>
           		  <xs:attribute name="Emp-id" type="xs:string" use="required"/>
         	  </xs:complexType>

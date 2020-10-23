@@ -9,7 +9,6 @@ xsi:noNamespaceSchemaLocation="emp.xsd">
    <Emp-emailid> rameshkumar@gmail.com </Emp-emailid>
    <Emp-Phonenum> 9525456789 </Emp-Phonenum>
    <Emp-designation> Manager </Emp-designation>
-   <Emp-promotion></Emp-promotion>
   </Employee> 
     <Employee Emp-id="E002"> 
    <Emp-name> Suresh Kumar </Emp-name> 
@@ -18,7 +17,6 @@ xsi:noNamespaceSchemaLocation="emp.xsd">
    <Emp-emailid> sureshkumar@gmail.com </Emp-emailid>
    <Emp-Phonenum> 9525455679 </Emp-Phonenum>
    <Emp-designation> Assistant Manager </Emp-designation>
-    <Emp-promotion></Emp-promotion>
   </Employee>
     <Employee Emp-id="E003"> 
    <Emp-name> Lokesh Kumar </Emp-name> 
@@ -27,24 +25,21 @@ xsi:noNamespaceSchemaLocation="emp.xsd">
    <Emp-emailid> lokeshkumar@gmail.com </Emp-emailid>
    <Emp-Phonenum> 9387658967 </Emp-Phonenum>
    <Emp-designation> Assistant Manager </Emp-designation>
-    <Emp-promotion></Emp-promotion>
   </Employee>
     <Employee Emp-id="E004"> 
    <Emp-name> Pritesh Kumar </Emp-name> 
-   <Emp-age> 55 </Emp-age> 
+   <Emp-age> 35 </Emp-age> 
    <Emp-salary> 59000 </Emp-salary> 
    <Emp-emailid> priteshkumar@gmail.com </Emp-emailid>
    <Emp-Phonenum> 9298059876 </Emp-Phonenum>
    <Emp-designation> Manager </Emp-designation>
-    <Emp-promotion></Emp-promotion>
   </Employee>
     <Employee Emp-id="E005"> 
    <Emp-name> Shailesh Kumar </Emp-name> 
-   <Emp-age> 56 </Emp-age> 
+   <Emp-age> 46 </Emp-age> 
    <Emp-salary> 56000 </Emp-salary> 
    <Emp-emailid> shaileshkumar@gmail.com </Emp-emailid>
    <Emp-Phonenum> 9123458671 </Emp-Phonenum>
    <Emp-designation> Assistant Manager </Emp-designation>
-    <Emp-promotion></Emp-promotion>
   </Employee>
   </Company>

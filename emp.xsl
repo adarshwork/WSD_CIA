@@ -13,15 +13,15 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<th>SALARY</th>
 	<th>EMAIL</th>
 	<th>MobNum</th>
-	<th>DESIGNATION</th> 
-	<th>PROMOTION</th>
+	<th>Designation</th> 
+	<th>Promotion</th>
 </tr> 
 	<xsl:for-each select="Company/Employee"> 
 <tr> 
     <td><xsl:value-of select="@Emp-id"/></td>
 	<td><xsl:value-of select="Emp-name"/></td> 
 	<td><xsl:value-of select="Emp-age"/></td> 
-	<td><xsl:value-of select="Emp-salary"/></td> 
+	<td>Rs.<xsl:value-of select="Emp-salary"/></td> 
 	<td><xsl:value-of select="Emp-emailid"/></td> 
 	<td><xsl:value-of select="Emp-Phonenum"/></td>
 	<td><xsl:value-of select="Emp-designation"/></td>
