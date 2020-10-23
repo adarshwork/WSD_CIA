@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
 <xs:element name="Company">
         <xs:complexType>
           <xs:sequence>
@@ -18,7 +17,7 @@
   							</xs:simpleType>
   					</xs:element>
             		<xs:element name="Emp-emailid" type="xs:string"/>
-            		<xs:element name="Emp-Phonenum" type="xs:integer"/>
+            		<xs:element name="Emp-Phonenum"/>
             		<xs:element name="Emp-designation" type="xs:string"/>
           		 </xs:sequence>
           		  <xs:attribute name="Emp-id" type="xs:string" use="required"/>
