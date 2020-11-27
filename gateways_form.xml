@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<CHRIST>
+<CS>
+<STU-NAME>Raju</STU-NAME>
+<STU-BRANCH>Bannerghatta</STU-BRANCH>
+
+<STU-COLLEGE>Christ University</STU-COLLEGE>
+<STU-EMAIL>raju.mcs@christuniversity.in</STU-EMAIL>
+</CS>
+<CS>
+<STU-NAME>Ramesh</STU-NAME>
+<STU-BRANCH>Central</STU-BRANCH>
+
+<STU-COLLEGE>Christ University</STU-COLLEGE>
+<STU-EMAIL>ramesh.mca@christuniversity.in</STU-EMAIL>
+</CS>
+<CS>
+<STU-NAME>Ram</STU-NAME>
+<STU-BRANCH>Kengri</STU-BRANCH>
+
+<STU-COLLEGE>Christ University</STU-COLLEGE>
+<STU-EMAIL>ram.bsc@christuniversity.in</STU-EMAIL>
+</CS>
+</CHRIST>

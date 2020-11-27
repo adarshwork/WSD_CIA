@@ -1,0 +1,20 @@
+.rform
+{
+	padding-left: 50px;
+}
+
+.rform select
+{
+	width: 200px;
+}
+table th, td
+{
+	border: 5px solid grey;
+}
+table
+{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+

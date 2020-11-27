@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Gateways 2020</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="styling.css">
+<script type="text/javascript">
+
+        function validateEmail()
+        {
+            if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/).test(document.reg_form.reg_email.value)) 
+            {
+                alert("Please enter a valid email address!");
+                return (false);
+            }
+            return true;
+        }
+
+        function onlyAlphabets(e, t) 
+        {
+            try {
+                if (window.event) 
+                {
+                    var charCode = window.event.keyCode;
+                }
+                else if (e)
+                {
+                    var charCode = e.which;
+                }
+                else { return true; }
+                if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))
+                    return true;
+                else
+                    return false;
+            }
+            catch (err) {
+                alert(err.Description);
+            }
+        }
+
+        function CheckPassword(inputtxt) 
+        { 
+            var pass=  /^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{9,}$/;
+            if(inputtxt.value.match(pass)) 
+            { 
+              return true;
+            }
+            else
+            { 
+              alert('Must contain at least one number, one special character and one uppercase and lowercase letter, and at least 9 or more characters');
+              return false;
+            }
+        }
+ 
+        function isPhoneNumberKey(evt)
+         {
+            var charCode = (evt.which) ? evt.which : event.keyCode;
+            if (charCode != 46 && charCode > 31 &&
+                (charCode < 48 || charCode > 57)) 
+            {
+                alert("Please enter a valid Phone Number");
+                return false;
+            }
+            return true;
+        }
+        function isAgeKey(evt)
+         {
+            var charCode = (evt.which) ? evt.which : event.keyCode;
+            if (charCode != 46 && charCode > 31 &&
+                (charCode < 48 || charCode > 57)) 
+            {
+                alert("Please enter a valid Phone Number");
+                return false;
+            }
+
+            var age = +document.getElementById('reg_age').value;
+            if ( age<1 )
+            {
+              alert("The age must not be negative!");
+              return false;
+            }
+            return true;
+          }
+
+          function capitalize(textboxid, str) 
+          {
+              if (str && str.length >= 1)
+              {       
+                  var firstChar = str.charAt(0);
+                  var remainingStr = str.slice(1);
+                  str = firstChar.toUpperCase() + remainingStr;
+              }
+              document.getElementById(textboxid).value = str;
+          }
+
+            function setCookie(c_name, value, expiredays) 
+            {  
+               var exdate = new Date();  
+                exdate.setDate(exdate.getDate() + expiredays);  
+                document.cookie = c_name + "=" + value + ";path=/" + ((expiredays ==null) ? "" : ";expires=" + exdate.toGMTString());  
+            }  
+            function getCookie(name) 
+            {  
+                var dc = document.cookie;  
+                var prefix = name +"=";  
+                var begin = dc.indexOf("; " + prefix);  
+                if (begin == -1) {  
+                    begin = dc.indexOf(prefix);  
+                    if (begin != 0)return null;  
+                } else {  
+                    begin += 2;  
+                }  
+                var end = document.cookie.indexOf(";", begin);  
+                if (end == -1) {  
+                    end = dc.length;  
+                }  
+                return unescape(dc.substring(begin + prefix.length, end));  
+            }  
+            function savenamecontact() 
+            {  
+                setCookie("SetName", document.getElementById("reg_username").value, 1); 
+                setCookie("SetPh", document.getElementById("reg_contact").value, 1); 
+            }  
+            function getNameContact() 
+            {  
+                var strVal = getCookie("SetName");  
+                var phVal=getCookie("SetPh");
+                var name = document.getElementById("reg_username").value;  
+                var pho = document.getElementById("reg_contact").value; 
+                if (strVal == name) 
+                {  
+                    alert("I am " + name);  
+                }  
+                if(phVal == pho)
+                {
+                  alert("Phone Number:" + pho); 
+                }
+            }
+</script>
+</head>
+<body>
+<div class="rform">
+          <h3 style="text-align: center;">Gateways 2020 - TECHOVID Registration</h3>
+          <form method="post" class="register" action="" name="reg_form" onsubmit="return validate_form();" enctype="multipart/form-data">
+            <p>
+              <p><label for="reg_name">Name:</label></p>
+              <input type="text" class="input-text" name="name" id="reg_name" placeholder="Full Name" onkeypress="return onlyAlphabets(event,this);" required />
+            </p>
+            <p>
+              <p><label for="reg_email">Email Address:</label></p>
+              <input type="email" class="input-text" name="email" id="reg_email" onchange="return validateEmail();" placeholder="name@example.com" required />
+            </p>
+            <p>
+              <p><label for="reg_name">Branch:</label></p>
+              <input type="text" class="input-text" name="name" id="reg_branch" onkeypress="return onlyAlphabets(event,this);" minlength="2" placeholder="Branch" required />
+            </p>  
+            <p>
+              <p><label for="reg_name">College/University Name:</label></p>
+              <input type="text" class="input-text" name="collegename" id="reg_collegename" onkeypress="return onlyAlphabets(event,this);" placeholder="College/University Name" required />
+            </p>   
+            <p>
+            <p><label for="reg_state">State</label></p>
+            <select name="state" id="reg_state" class="form-control" style="width=200px;">
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+            <option value="Daman and Diu">Daman and Diu</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Lakshadweep">Lakshadweep</option>
+            <option value="Puducherry">Puducherry</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+            </select>
+            </p>  
+            <p><label for="reg_address">Address</label></p>
+            <textarea name="address" id="reg_address" minlength="10" style="width: 200px; height: 50px;" required></textarea>
+            </p>
+            <p>
+            <p><label for="reg_age">Age</label></p>
+            <input class="input-text" type="text" name="age" id="reg_age" minlength="1" maxlength="3" onkeypress="return isAgeKey(event)" placeholder="20" required//>
+            </p>  
+            <p>
+            <p><label for="reg_contact">Phone No.</label></p>
+            <input class="input-text" type="text" name="contact" id="reg_contact" minlength="10" maxlength="10" onkeypress="return isPhoneNumberKey(event)" onblur="savenamecontact();" placeholder="9023475681" required//>
+            </p>  
+            <p>
+              <p><label for="reg_username">Username:</label></p>
+              <input type="text" class="input-text" name="username" id="reg_username" minlength="3" onkeyup="javascript:capitalize(this.id, this.value);" onblur="savenamecontact();" placeholder="Username" required />
+            </p>    
+            <p>
+              <p><label for="reg_password">Password:</label></p>
+              <input type="password" class="input-text" name="password" id="reg_password" placeholder="*********" pattern="^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{9,}$" title="Must contain at least one number, one special character and one uppercase and lowercase letter, and at least 9 or more characters" onchange="CheckPassword(document.reg_form.password);" required />
+            </p> 
+            <p>
+              <input type="submit" class="button" name="submit" onclick="getNameContact();" value="REGISTER" />
+            </p>           
+          </form>
+    </div>
+</body>
+</html>
