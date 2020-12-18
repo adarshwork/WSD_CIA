@@ -1,0 +1,65 @@
+
+.sinfo
+{
+    padding-left: 100px;
+    text-align: justify-all;
+    font-weight:bold;
+    color: white;
+}
+.sinfo form input.input-text
+{
+    height: 40px;
+    width: 500px;
+    color: black;
+}
+table
+{
+    font-size: 2em;
+}
+
+table.center 
+{
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+table td.title a 
+{
+    font-weight: 600;
+    color:black;
+}
+
+table td.title a:hover 
+{ 
+    background-color: #505050;
+}
+table th,td
+{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+td
+{
+    height: 105px;
+    color: white;
+}
+td a
+{
+    text-decoration: none;
+    color: white;
+}
+td a:hover
+{
+    text-decoration: none;
+    color: white;
+    background-color: #777777;
+}
+
+th
+{
+    color: white;
+    background-color:#202020;   
+}
+
+
